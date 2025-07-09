@@ -1,0 +1,21 @@
+=== Functionality Summarizer (AutoGen, few-shot) ===
+
+[class] Student:
+A Python class representing a student entity.  
+Initializes with a name attribute provided at creation.  
+Includes a method to greet using the stored name, printing a personalized hello message.  
+
+TERMINATE
+
+[function] add:
+A utility function that takes two parameters, `a` and `b`.  
+Calculates the sum of the two parameters.  
+Returns the result of the addition.  
+Useful for performing basic arithmetic addition.
+
+[function] subtract:
+A function that takes two parameters, `a` and `b`.  
+Calculates the difference between `a` and `b`.  
+Returns the result of the subtraction.  
+Utilized for performing basic arithmetic subtraction.
+
