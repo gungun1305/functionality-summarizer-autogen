@@ -8,6 +8,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 from autogen import AssistantAgent
 from parser import parse_code
 from prompts import build_summary_prompt
+
 config_list = [
     {"model": "gpt-4o-mini", "api_key": OPENAI_API_KEY}
 ]
@@ -25,7 +26,7 @@ def main():
     parts = parse_code(code_text)
 
     with open("summary.txt", "w", encoding="utf-8") as f:
-        f.write("=== Functionality Summarizer (AutoGen, few-shot) ===\n\n")
+        f.write("Functionality Summarizer\n\n")
 
         for kind, name, snippet in parts:
             prompt = build_summary_prompt(kind, name, snippet)
@@ -39,7 +40,7 @@ def main():
             print(line.strip())
             f.write(line)
 
-    print("\n✅ All summaries saved to summary.txt")
+    print("\n All summaries saved to summary.txt")
 
 if __name__ == "__main__":
     main()
