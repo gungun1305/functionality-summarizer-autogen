@@ -30,7 +30,7 @@ functionality-summarizer-openai/
 2. Install dependencies:
 
    ```bash
-   pip install pyautogen
+   pip install ag2
    ```
 
    *(You may also need **`openai`** if not included: **`pip install openai`**)*
